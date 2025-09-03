@@ -513,7 +513,7 @@ const _0x323f3f=_0x4bb3;(function(_0x48d883,_0x1caca3){const _0x13ca97=_0x4bb3,_
     <script>
 document.getElementById('downloadButton').addEventListener('click', function() {
     // Try fetching locally
-    fetch('/Offline-File/𝙳𝚒𝚗𝚐𝚞𝚜𝙿𝚛𝚘𝚡𝚢𝙾𝚏𝚏𝚕𝚒𝚗𝚎.html')
+    fetch()
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch from local server');
@@ -524,7 +524,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
         .catch(error => {
             console.error('Error with local file:', error);
             // If local fetch fails, try the backup URL
-            return fetch('')
+            return fetch('https://raw.githubusercontent.com/crownytrex/PROJECT-Orca/refs/heads/main/DownloadOrca.html')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch from GitHub');
@@ -581,7 +581,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 }
 
 
-#down3213 {
+#downloadButton {
       position: absolute;
       top: 25px;
       left: 335px;
