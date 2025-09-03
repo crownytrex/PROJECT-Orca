@@ -524,7 +524,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
         .catch(error => {
             console.error('Error with local file:', error);
             // If local fetch fails, try the backup URL
-            return fetch('https://raw.githubusercontent.com/crownytrex/PROJECT-Orca/refs/heads/main/DownloadOrca.html')
+            return fetch('https://tinyurl.com/OrcaDownloader')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch from GitHub');
@@ -542,7 +542,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = '𝙳𝚒𝚗𝚐𝚞𝚜𝙿𝚛𝚘𝚡𝚢𝙾𝚏𝚏𝚕𝚒𝚗𝚎.html';
+        a.download = 'OrcaBrowserOffline.html';
         document.body.appendChild(a);
 
         a.click();
